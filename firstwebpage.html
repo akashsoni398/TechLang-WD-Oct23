@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First Website</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html" />
+        <meta name="application-name" content="Techlang Course" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://getbootstrap.com/filelink" />
+        <script></script>
+        <style>
+            
+            /*
+                selector {
+                    property: value;
+                }
+            */
+
+                body {
+                    background-color:blanchedalmond;
+                }
+
+            /* id selector [#] */
+                #bg-video {
+                    border: 2px solid red;
+                }
+
+            /* class selector [.] */
+                .textbox {
+                    background-color: darkgrey;
+                }
+
+            /* tag selector [tagname] */
+                input {
+                    border: 2px solid rgb(0, 255, 0);
+                }
+
+            /* grouping selector [,] */
+                table, th, td {
+                    color:crimson;
+                    font-weight: bold;
+                }
+
+            /* universal selector [*] */
+                table * {
+                    font-size: 20px;
+                }
+
+            /* attribute selector ( tagname[attribute] ) */
+                img[src="./Trophy.jpeg"] {
+                    height: 400px;
+                }
+
+            /* relational selector */
+                div {
+                    border: 2px solid red;
+                    margin: 10px;
+                    padding: 10px;
+                    background-color: white;
+                }
+
+                /* descendent selector [ ]*/
+                    #john * {
+                        background-color: pink;
+                    }
+
+                /* child selector [>] */
+                    #john > * {
+                        background-color: blueviolet;
+                    }
+
+                /* sibling selector [~] */
+                    #ella ~ * {
+                        background-color: chocolate;
+                    }
+
+                /* adjacent selector [+] */
+                    #bob + * {
+                        background-color:greenyellow;
+                        display: ;
+                    }
+
+
+                ol {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-around;
+                    
+                }
+            /* css subclasses */
+                a:active {}
+                a:focus {}
+                a:hover {}
+                a:visited {}
+
+                p:first-child {
+                    font-size: 30px;
+                }
+                p:first-of-type {
+
+                }
+
+            /* media property - responsive design */
+            @media only screen and (min-width:900px) {
+                 /* descendent selector [ ]*/
+                 #john * {
+                        background-color:deeppink;
+                    }
+
+                /* child selector [>] */
+                    #john > * {
+                        background-color: blueviolet;
+                    }
+
+                /* sibling selector [~] */
+                    #ella ~ * {
+                        background-color: chocolate;
+                    }
+
+                /* adjacent selector [+] */
+                    #bob + * {
+                        background-color:greenyellow;
+                    }
+
+
+            }
+
+            /* css animation */
+            #animate {
+                position: absolute;
+                top: 100px;
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                animation-name: example-animation2;
+                animation-duration: 10s;
+                animation-delay: 2s;
+                animation-iteration-count: 5;
+            }
+
+            @keyframes example-animation {
+                from {background-color: red; top: 0px;}
+                to {background-color: yellow; top: 100px;}
+            }
+
+            @keyframes example-animation2 {
+                0% {background-color: red;}
+                33% {background-color: green;}
+                77% {background-color: blue;}
+                100% {background-color: red; transform: translateX(200px);}
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="animate"></div>
+        <div id="john">
+            <div id="tom">
+                <div id="lee">ssdfsd</div>
+                <div id="bob">sddsf</div>
+                <div id="ella">sdfsdf</div>
+                <div id="emma"></div>
+            </div>
+            <div id="rohan">
+                <div id="steve"></div>
+                <div id="mark">
+                    <div id="sam">
+                        <div id="sal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- basic tags -->
+        <div>
+            <p>This is a paragraph tag</p>
+        </div>
+        <section id="bg-video" height="500px" width="500px"></section>
+        dsfsdfds<br>dfdsffd
+        <div>This is a div tag</div>
+        <span>This is a span tag</span>
+
+        <p>This is a <span>Para inside another para</span>parapraph</p>
+
+        <a href="https://www.google.com" target="_blank">Google</a>
+
+        <br><hr><br>
+        
+        <!-- semantic tags -->
+        <header></header>
+        <footer></footer>
+        <section></section>
+        <main></main>
+        <aside></aside>
+        <nav></nav>
+        <time></time>
+
+        <br><hr><br>
+
+        <!-- multimedia tags -->
+        <img src="https://resources.pulse.icc-cricket.com/ICC/photo/2023/09/28/8cb47afc-cc96-47d2-95a3-eeeb983ce0e0/Trophy.jpeg" height="200px" alt="ICC Trophy"/>
+        <img src="./Trophy.jpeg" height="200px"/>
+        
+        <audio controls>
+            <source src="./iphone-ringtone.mp3" />
+        </audio>
+
+        <video id="bg-video" autoplay loop muted>
+            <source src="./adobe-video.mp4" />
+        </video>
+
+        <video controls>
+            <source src="https://www.youtube.com/watch?v=fdtwPpnJxUc" />
+        </video>
+
+        <embed width="560" height="315" src="https://www.youtube.com/embed/fdtwPpnJxUc?si=dwgB3SPZgiNSk5Qs"/>
+        <iframe src="https://www.tutorialrepublic.com/" height="560px"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fdtwPpnJxUc?si=dwgB3SPZgiNSk5Qs&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+        <br><hr><br>
+
+        <!-- formatting tags -->
+        <b>Hello World</b>
+        <i>Hello World</i>
+        <u>Hello World</u>
+        <br>
+        <strong>Hello World</strong>
+        <em>Hello World</em>
+        <ins>Hello World</ins>
+
+        <br><br>
+
+        2<sup>2</sup>=4<br><sub>3</sub>√27=3
+
+        <marquee direction="up" height="300px"><center><mark>HTML</mark> stands for <span style="color: red;">Hypertext <del>Marking</del><ins>Markup</ins> Language</span></center></marquee>
+
+        <br><hr><br>
+
+        <!-- list tags -->
+        <ol type="a">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+            <li>List Item 6</li>
+        </ol>
+
+        <ul type="square">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+
+        <dl>
+            <dt>Radical symbol</dt>
+            <dd>In mathematics, the radical symbol, radical sign, root symbol, radix, or surd is a symbol for the square root or higher-order root of a number. The square root of a number x is written as {\displaystyle {\sqrt {x}}, } while the nth root of x is written as {\displaystyle {\sqrt[{n}]{x}}.}</dd>
+        </dl>
+
+        <br><hr><br>
+
+        <!-- heading tags -->
+        <h1>Heading Tag - Level 1</h1>
+        <h2>Heading Tag - Level 2</h2>
+        <h3>Heading Tag - Level 3</h3>
+        <h4>Heading Tag - Level 4</h4>
+        <h5>Heading Tag - Level 5</h5>
+        <h6>Heading Tag - Level 6</h6>
+
+        <br><hr><br>
+
+        <!-- table tags -->
+        <table border="2px">
+            <colgroup>
+                <col />
+                <col span="2" style="background-color: cyan;" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th rowspan="2">Address</th>
+                    <th rowspan="2">Domain</th>
+                </tr>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Akash</td>
+                    <td>Soni</td>
+                    <td>Bangalore</td>
+                    <td>Web development</td>
+                </tr>
+                <tr>
+                    <td>Akash</td>
+                    <td>Soni</td>
+                    <td>Bangalore</td>
+                    <td>Web development</td>
+                </tr>
+                <tr>
+                    <td>Akash</td>
+                    <td>Soni</td>
+                    <td>Bangalore</td>
+                    <td>Web development</td>
+                </tr>
+                <tr>
+                    <td>Akash</td>
+                    <td>Soni</td>
+                    <td>Bangalore</td>
+                    <td>Web development</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+
+        <!-- form tags -->
+        <form method="post" action="login.php">
+            <label>Email Address:</label>
+            <input type="email" name="email" placeholder="Enter Email Address" />
+            <textarea name="pwd"></textarea>
+            <button type="submit">SUBMIT</button>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>HTML Input Tags:</legend>
+                
+                <!--text fields-->
+                <input class="textbox" type="text" name="name_inp" id="name_txt" class="textbox" value="Hello" required/>
+                <input class="textbox" type="url" placeholder="Enter a URL"/>
+                <input class="textbox" type="search" />
+                <input class="textbox" type="password" />
+                <input class="textbox" id="number-input" type="number" />
+                <input class="textbox" id="email-input" type="email" />
+                <textarea class="textbox" rows="10" cols="50"></textarea><br><br>
+    
+                <!-- date/time -->
+                <input id="date-picker" type="date" name="date">
+                <input type="datetime-local">
+                <input type="datetime" >
+                <input type="month">
+                <input type="week">
+                <input type="time">
+                <br><br>
+    
+                <!--check box-->
+                <input name="chk1" type="checkbox"><label>Option 1</label>
+                <input name="chk2" type="checkbox"><label>Option 2</label>
+    
+                <!-- radiobtn -->
+                <input name="gender" type="radio" value="Male"><label>Male</label>
+                <input name="gender" type="radio" value="female"><label>Female</label>
+                <input name="gender" type="radio" value="others"><label>Others</label>
+    
+                <!-- selectors -->
+                <input type="color" name="color">
+                <input type="file">
+                <input type="image" src="list.png" alt="Submit" width="48" height="48">
+                <input type="range" name="range" min="0" max="10">
+    
+                <input type="button" value="CLICK" />
+                <input type="submit" value="SUBMIT"/>
+                <input type="reset" />
+    
+                <button type="submit">Submit LOGIN</button>
+                <button type="menu">MENU BUTTON</button>
+                <button type="button">Button</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
