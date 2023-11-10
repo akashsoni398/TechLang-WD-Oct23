@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Soni - Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        #hero {
+            position: relative;
+            background: url("./assets/hero-bg.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        #hero h1,h3,p {
+            position: absolute;
+            top: 35%;
+            left: 10%;
+            color: white;
+            font-weight: bold;
+        }
+        #hero h3 {
+            top: 42%;
+            overflow: hidden;
+            border-right: .15em solid white;
+            margin: 0 auto;
+            white-space: nowrap;
+            animation: 
+                typing 4s steps(30, end) infinite,
+                blink-cursor .75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            50% { width: 350px }
+            to { width: 0}
+        }
+        @keyframes blink-cursor {
+            from, to { border-color: transparent }
+            50% { border-color: white }
+        }
+
+        #hero p {
+            top: 50%;
+            font-weight:700;
+            letter-spacing: 0.15em;
+        }
+        #hero #socials {
+            position: absolute;
+            left: 10%;
+            top: 60%;
+        }
+        #hero #socials a {
+            color: white;
+            font-size:x-large;
+        }
+        #hero #resume-download {
+            position: absolute;
+            top: 70%;
+            left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <section id="hero">
+        <h1>JOHN DOE</h1>
+        <h3>Hi, I'm a <span>Web Developer</span></h3>
+        <p>Designer | Developer | Freelancer | Photographer</p>
+        <div id="socials" class="row g-5 d-inline-flex">
+            <a href="www.linkedin.com" class="col"><i class="bi bi-linkedin"></i></a>
+            <a href="www.linkedin.com" class="col"><i class="bi bi-github"></i></a>
+            <a href="www.linkedin.com" class="col"><i class="bi bi-globe2"></i></a>
+            <a href="www.linkedin.com" class="col"><i class="bi bi-telephone-fill"></i></a>
+            <a href="www.linkedin.com" class="col"><i class="bi bi-envelope"></i></a>
+        </div>
+        <a id="resume-download" href="./resume.txt" download="John-Doe-Resume.txt"><button type="button" class="btn btn-warning">Download Resume</button></a>
+    </section>
+    <nav></nav>
+    <section id="showcase">
+        <div id="about-me"></div>
+        <div id="skills"></div>
+    </section>
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <nav id="portfolio-nav"></nav>
+        <div id="portfolio-list">
+            <div id="card1"></div>
+            <div id="card2"></div>
+            <div id="card3"></div>
+            <div id="card4"></div>
+        </div>
+    </section>
+    <section id="journal">
+        <h2>My Journal</h2>
+        <div id="journal-list">
+            <div id="blog1"></div>
+            <div id="blog2"></div>
+            <div id="blog3"></div>
+        </div>
+    </section>
+    <section id="contact-me"></section>
+    <footer></footer>
+</body>
+</html>
